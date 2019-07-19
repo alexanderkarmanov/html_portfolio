@@ -1,0 +1,97 @@
+.person {
+padding-top: 30px;
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+	@media only screen and (min-width: 768px) {
+	padding-top: 30px; 	
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+	@media only screen and (min-width : 1200px) {
+	padding-top: 73px; 	
+}
+}
+
+.person__avatar {
+	overflow: hidden;
+	width: 110px;
+	height: 110px;
+	border-radius: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 35px;
+ 	box-shadow: 0px 0px 40px 0px rgba(72, 119, 159, 1);
+ 	background-image: url(../img/placeholders/user-avatar-placeholder-small.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+	@media only screen and (min-width: 768px) {
+	margin-bottom: 40px;
+		
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+	@media only screen and (min-width : 1200px) {
+	margin-bottom: 25px;
+	}
+
+}
+
+.person__avatar--big {
+	width: 205px;
+	height: 205px;
+	border-radius: 110px;
+ 	box-shadow: none;
+
+ 	@media (min-width: 768px) {
+ 	width: 95px;
+ 	height: 95px;
+ 	}
+
+ 	@media (min-width: 1200px) {
+ 	width: 205px;
+	height: 205px;
+ 	}
+}
+
+.person_title {
+	font-size: 26px;
+	color: #fff;
+	text-shadow: 0px 0px 40px rgba(72, 119, 159, 1);
+ 	line-height: 1.2;
+ 	margin-bottom: 15px;
+
+ /* Small Devices, Tablets - adaptive styles bofore 768px */
+	@media only screen and (min-width: 768px) {
+	font-size: 42px;
+	
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+	@media only screen and (min-width : 1200px) {
+	font-size: 56px;
+	
+}
+
+}
+
+.person_subtitle {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.2;
+	text-shadow: 0px 0px 40px rgba(72, 119, 159, 1);
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+	@media only screen and (min-width: 768px) {
+	font-size: 20px;
+	
+}
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+	@media only screen and (min-width : 1200px) {
+	font-size: 26px;
+	
+}
+}

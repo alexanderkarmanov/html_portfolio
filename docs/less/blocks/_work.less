@@ -1,0 +1,142 @@
+.work__card {
+	text-align: left;
+	margin-bottom: 38px;
+	max-width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media(min-width: 768px) {
+		margin-bottom: 52px;
+	}
+
+	@media (min-width: 1200px) {
+		margin-bottom: 78px;
+	}
+	
+}
+
+.work__card-img {
+	margin-bottom: 18px;
+	height: 201px;
+	position: relative;
+	background-image: url(../img/placeholders/project_placeholder.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	@media (min-width: 768px) {
+		height: 147px;
+	}
+
+	@media (min-width: 992px) {
+		height: 200px;
+	}
+
+	@media (min-width: 1200px) {
+		height: 230px;
+	}
+}
+
+.work__card-img__hover {
+	position: absolute;
+	top: 100%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 82, 194, 0.9);
+
+	text-align: center;
+	color: #fff;
+	font-size: 26px;
+	transition: top 0.5s ease-out;
+
+
+	.fa {
+		font-size: 64px;
+		margin-bottom: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -0%);
+
+		@media (min-width: 768px) {
+			font-size: 50px;
+		}
+
+		@media (min-width: 1200px) {
+			font-size: 64px;
+			margin-top: 60px;
+			position: static;
+			transform: translate(0%, 0%);
+		}
+	}
+
+	span {
+		display: none;
+
+		@media (min-width: 1200px) {
+			display: inline-block;
+		}
+	}
+}
+
+.work__card-img:hover .work__card-img__hover{
+	display: block;
+	top: 0%;
+
+	.fa {
+		transform: translate(-50%, -50%);
+
+	@media (min-width: 1200px) {
+		transform: translate(0%, 0%);
+
+	}
+	}
+	
+
+}
+
+.work__card-link {
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+	transition: 0.2s;
+
+	@media (min-width: 1200px) {
+	font-size: 24px;
+	border-bottom: 1px dotted #000080;
+	}
+
+	&:hover, &:active, &:focus {
+		color: @blue;
+		border-bottom-color: @blue;
+	}
+}
+
+.work__card-no-link {
+	font-size: 20px;
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+
+	@media (min-width: 1200px) {
+	font-size: 24px;
+	border-bottom: 1px dotted #000080;
+	}
+}
+
+.work__card-content {
+
+	p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+
+		@media (min-width: 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+		}
+	}
+}

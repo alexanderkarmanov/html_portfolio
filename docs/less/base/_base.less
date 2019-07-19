@@ -1,0 +1,134 @@
+html, body {
+	height: 100%;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	line-height: 1.4;
+}
+
+body {
+	font-size: 1.6rem; /* 10px * 1.6 = 16px */
+	font-family: 'Noto Sans';
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+
+.block_section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	@media (min-width: 768px) {
+		padding-bottom: 60px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-bottom: 90px;
+	}
+
+	&--bg_header {
+	background-color: #065a97;
+	}
+
+	&--bg_footer {
+		background-color: #065a97;
+
+		@media (min-width: 1500px) {
+		background-image: url(../img/bg/cloud.png);
+		background-repeat: no-repeat;
+		background-position: right 50%;
+	}
+
+	}
+
+	&--bg_copyright {
+		background-color: #003f6d;
+		padding-bottom: 45px;
+		padding-top: 40px;
+	}
+}
+
+.block_section-small_padding {
+	padding-top: 30px;
+	padding-bottom: 40px;
+
+	@media (min-width: 768px) {
+		padding-top: 46px;
+		padding-bottom: 40px;
+	}
+
+	@media (min-width: 1200px){
+		padding-top: 66px;
+		padding-bottom: 40px;
+	}
+	
+}
+
+.block_section--bg-resume {
+	background-image: none;
+
+	@media (min-width: 1500px) {
+	background-image: url(../img/bg/laptop.png);
+	background-repeat: no-repeat;
+	background-position: right 70%;
+	}
+}
+
+.block_section--bg-work {
+	background-image: none;
+
+	@media (min-width: 1500px) {
+	background-image: url(../img/bg/gear.png);
+	background-repeat: no-repeat;
+	background-position: left 55%;
+	}
+}
+
+.block__content {
+	padding: 10px;
+	background-color: #20B2AA;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.line {
+	border: 1px solid #e9eff3;
+}
+
+
+
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens - adaptive styles bofore 1200px */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops - adaptive styles bofore 992px */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets - adaptive styles bofore 768px */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones - adaptive styles bofore 480px */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina - adaptive styles bofore 320px */
+@media only screen and (max-width : 320px) {
+
+}
